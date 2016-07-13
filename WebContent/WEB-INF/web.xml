@@ -59,6 +59,6 @@
   </filter>
   <filter-mapping>
     <filter-name>Passwdfilter</filter-name>
-    <url-pattern>/index.jsp</url-pattern>
+    <url-pattern>/login.do</url-pattern>
   </filter-mapping>
 </web-app>

@@ -12,6 +12,8 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 
+import sun.util.logging.resources.logging;
+
 /**
  * Servlet Filter implementation class Passwdfilter
  */
@@ -48,6 +50,7 @@ public class Passwdfilter implements Filter {
 		String usernameString=request.getParameter("username");
 		if(!inituserString.equals(usernameString)){
 			request.getRequestDispatcher("login.jsp").forward(request, response);
+			
 		}
 		
 		chain.doFilter(request, response);
